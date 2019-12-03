@@ -52,9 +52,6 @@ def job():
 		# Проверка наличия изменений в текущей ветке
 		if count == 0:
 			print("Already up to date. If you make changes to the repo, a new container will be created")
-			rm = 'rm tmp1 tmp2'
-			resrm = subprocess.Popen(rm, shell = True)
-			resrm.wait()
 		else:
 			file = open('tmp2', 'r')
 			for item in file.readlines(): #Идём по всем веткам
