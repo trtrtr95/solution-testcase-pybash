@@ -5,7 +5,7 @@ from threading import Timer
 def clone():
 
 	# Скачивание репозитория и копирование Dockerfile 
-	cmd = 'git clone https://github.com/trtrtr95/testcase-pybash.git'
+	cmd = 'git clone https://github.com/kontur-exploitation/testcase-pybash.git'
 	cp = 'cp Dockerfile testcase-pybash'
 	version = 1
 	
