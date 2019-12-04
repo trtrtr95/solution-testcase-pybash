@@ -71,7 +71,7 @@ def job():
 				
 				version+=1
 				# Сборка нового билда
-				build = 'docker build --label "commit hash=%s'%flogcm + '" --label "maintaner=%s'%flogat + '" --label "branch=%s'%branch + '" -t testcase-pybash:v.%s'%version +' testcase-pybash/'
+				build = 'docker build --label "commit_hash=%s'%flogcm + '" --label "maintaner=%s'%flogat + '" --label "branch=%s'%branch + '" -t testcase-pybash:v.%s'%version +' testcase-pybash/'
 				resbuild = subprocess.Popen(build, shell = True)
 				resbuild.wait()
 				# Остановка контейнера в случае повторного билда
